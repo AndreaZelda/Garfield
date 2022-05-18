@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>
+    <link rel="stylesheet" href="csslinks/estiloformulario.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@300;400&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menusito">
+    <nav data-aos="slide-down" data-aos-duration="1000">
+        <div id="logo"></div>
+
+        <ul>
+            <li><a href="sobregarfield.html">sobre Garfield</a></li>
+            <li><a href="personajes.html">personajes</a></li>
+            <li><a href="contenido.html">contenido</a></li>
+            <li><a href="formulario.html">inscribirse</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <a href="../index.html"><img id="imagenlogo" src="../imagenes/Garflogo.png" data-aos="slide-down" data-aos-duration="1000"></a>
+    <br><br><br><br><br><br><center><img id="inscripcion" src="../imagenes/inscripcionpng.png" data-aos="fade" data-aos-duration="1200">
+    <p>Inscribete al club de fans de Garfield</p> 
+    <p>Llena este formulario y seras parte de nuestra gran familia</p></center>
+
+    <br><br>
+
+    <div id="formulariogarfield">
+    <form class="fans" action="guardar.php" method="POST" id="contact_form" runat="server" 
+    enctype="multipart/form-data">
+
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" name="Nombre" maxlength="30" required ><br>
+
+        <label for="Apellidos">Apellidos:</label><br>
+        <input type="text" id="Apellidos" name="Apellidos" maxlength="60"required ><br><br>
+
+        <label for="Fecha">¿Desde que año eres fan de Garfield?</label><br>
+        <input type="number" id="Fecha" name="Fecha" min="1978" max="2022" maxlength="4" required ><br><br>
+
+        <h4>Pel&iacute;cula favorita:</h4>
+        <select name="Pelicula">
+            <option value="">-----</option>
+            <option value="Garfield">Garfield: La pel&iacute;cula</option>
+            <option value="Garfield2">Garfield 2</option>
+            <option value="GarfieldGetsReal">Garfield Gets Real</option>
+            <option value="GarfieldFunFest">Garfield Fun Fest</option>
+            <option value="GarfieldPetForce">Garfield Pet Force</option>
+            <option value="Ninguna">Ninguna</option>
+
+        </select>
+        <br><br>
+
+        <h4>Especial de TV favorito:</h4>
+        <select name="especialtv">
+            <option value="">-----</option>
+            <option value="Here comes garfield">Here Comes Garfield</option>
+            <option value="Garfield on the town">Garfield on the Town</option>
+            <option value="Garfield in the rough">Garfield in the Rough</option>
+            <option value="Garfield halloween">Garfield's Halloween Adventure</option>
+            <option value="Garfield in paradise">Garfield in Paradise</option>
+            <option value="Garfield hollywood">Garfield Goes Hollywood</option>
+            <option value="Garfield christmas">A Garfield Christmas</option>
+            <option value="Garfield 9 Lives">Garfield: His 9 Lives</option>
+            <option value="Garfield babes and bullets">Garfield's Babes and Bullets</option>
+            <option value="Garfield thanksgiving">Garfield's Thanksgiving</option>
+            <option value="Garfield feline fantasies">Garfield's Feline Fantasies</option>
+            <option value="Garfield gets a life">Garfield Gets a Life</option>
+            <option value="Ninguno">Ninguno</option>
+
+        </select><br><br>
+        <label for="Pais">¿De qu&eacute; pa&iacute;s eres?</label><br>
+        <input type="text" id="Pais" name="Pais" required ><br><br>
+        
+        <label for="Correo">Correo Electr&oacute;nico:</label><br>
+        <input type="email" id="Correo" name="Correo" maxlength="60" required ><br><br>
+        
+        <label for="Cel">Celular:</label><br>
+        <input type="text" id="Cel" name="Cel" maxlength="10" required ><br><br>
+        
+        <label for="Mercancia">¿Cuentas con mercancia de Garfield?</label><br>
+        <div><input type="radio" name="Mercancia" value="Si">
+        <label for="Mercancia">Si</label></div>
+        <div><input type="radio" name="Mercancia" value="No">
+        <label for="Mercancia">No</label></div>
+        <div><input type="radio" name="Mercancia" value="Nolose">
+        <label for="Mercancia">No lo se</label></div>
+        
+        <br>
+        <button class="submit" types"submit">Enviar Registro</button>
+    </form>
+    </div>
+    
+            <!--LIBRERIA-->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+}
+
+@font-face {
+    font-family: 'MADE TOMMY';
+    src: url(../../fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+  }
+
+  @font-face {
+    font-family: 'Champagne & Limousines';
+    src: url(../../fonts/Champagne\ &\ Limousines.ttf);
+  }
+
+#imagenlogo {
+    position: fixed;
+    margin-left: 2%;
+    margin-top: 3px;
+    max-width: 15%;
+    min-width: 10%;
+}
+
+#sobregarfield {
+    width: 40%;
+}
+
+#menusito {
+    width: 1920px;
+    height: 75px;
+    background-color: beige;
+    position: fixed;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(254, 154, 0);
+    /*text-shadow: 2px 2px rgb(0, 0, 0);*/
+    font-size: 1.2em;
+    font-family: Josefin Sans;
+}
+
+nav ul li:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+header {
+    width: 100%; height: 20%;
+}
+
+#headertexto {
+    font-family: MADE TOMMY;
+    font-size: 20px;
+}
+
+#sliderlargo {
+    width: 1280px;
+    height: 86px;
+    background-image: url(../../imagenes/largo2.png);
+    background-size: 100% 100%;
+
+    animation: slider 60s infinite linear;
+}
+
+@keyframes slider {
+    to{background-position: 1280px;}
+}
+
+/*ALTURA ............. 70% */
+main {
+    width: 100%; height: 100%;
+}
+ /*ALTURA ............. 100% de main */
+ #left {
+     width: 20%; height: 100%;
+     float: left;
+ }
+
+ /*ALTURA ............. 100% de main */
+ article {
+     width: 60%; height: 100%;
+     float: left;
+ }
+
+ #principalinfo {
+     text-align: justify;
+     font-family: Josefin Sans;
+ }
+
+.imagenesdatos {
+    border-radius: 50%;
+}
+
+.textop {
+    font-family: Josefin Sans;
+    font-size: 20px;
+}
+
+.textop2 {
+    font-family: Josefin Sans;
+    font-size: 17px;
+}
+
+ #dato1 {
+     float: left;
+     margin-top: 100px;
+ }
+
+ #imagendato1 {
+     float: left;
+     width: 200px;
+     height: 200px;
+     background-color: #FE9A00;
+     border-radius: 50%;
+     margin-right: 59px;
+ }
+
+ #infodato1 {
+     float: left;
+     width: 670px;
+     height: 190px;
+     border-radius: 10px;
+     background-color: #FE9A00;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 10px;
+ }
+
+ #dato2 {
+    float: left;
+    margin-top: 100px;
+}
+
+#imagendato2 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-left: 59px;
+}
+
+#infodato2 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #FFD500;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#dato3 {
+    float: left;
+    margin-top: 100px;
+}
+
+#imagendato3 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-right: 59px;
+}
+
+#infodato3 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #23A5D9;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#dato4 {
+    float: left;
+    margin-top: 100px;
+}
+
+#imagendato4 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-left: 59px;
+}
+
+#infodato4 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #8F6CD9;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#dato5 {
+    float: left;
+    margin-top: 100px;
+}
+
+#imagendato5 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-right: 59px;
+}
+
+#infodato5 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #BF4996;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#dato6 {
+    float: left;
+    margin-top: 100px;
+}
+
+#imagendato6 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-left: 59px;
+}
+
+#infodato6 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #FE9A00;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#dato7 {
+    float: left;
+    margin-top: 100px;
+}
+
+#imagendato7 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-right: 59px;
+}
+
+#infodato7 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #FFD500;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#dato8 {
+    float: left;
+    margin-top: 100px;
+}
+
+#imagendato8 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-left: 59px;
+}
+
+#infodato8 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #23A5D9;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#dato9 {
+    float: left;
+    margin-top: 100px;
+}
+
+#imagendato9 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-right: 59px;
+}
+
+#infodato9 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #8F6CD9;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#dato10 {
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#imagendato10 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #FE9A00;
+    border-radius: 50%;
+    margin-left: 59px;
+}
+
+#infodato10 {
+    float: left;
+    width: 670px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #BF4996;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+ /*ALTURA ............. 100% de main */
+ #right {
+     width: 20%; height: 100%;
+     float: right;
+ }

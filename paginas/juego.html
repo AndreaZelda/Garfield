@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="csslinks/estilojuego.css">
+</head>
+<body>
+    <nav>
+        <div id="logo"></div>
+
+        <ul>
+            <li><a href="sobregarfield.html">sobre Garfield</a></li>
+            <li><a href="personajes.html">personajes</a></li>
+            <li><a href="contenido.html">contenido</a></li>
+            <li><a href="formulario.html">inscribirse</a></li>
+        </ul>
+    </nav>
+    <a href="../index.html"><img id="imagenlogo" src="../imagenes/Garflogo.png"></a>
+    <br><br><br><br><br><br><center><h1>Inscripci&oacute;n</h1>
+    <p>Inscribete al club de fans de Garfield</p> 
+    <p>Llena este formulario y seras parte de nuestra gran familia</p></center>
+
+    <br><br>
+
+    <div id="formulariogarfield">
+    <form class="clientes" action="guardar.php" method="POST" id="contact_form" runat="server" 
+    enctype="multipart/form-data">
+
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" name="Nombre" maxlength="30" required ><br>
+
+        <label for="Apellidos">Apellidos:</label><br>
+        <input type="text" id="Apellidos" name="Apellidos" maxlength="60"required ><br><br>
+
+        <label for="Calle">Calle:</label><br>
+        <input type="text" id="Calle" name="Calle" maxlength="60" required ><br><br>
+
+        <h4>Colonia:</h4>
+        <select name="Colonia">
+            <option value="">-----</option>
+            <option value="Aztecas">Aztecas</option>
+            <option value="Fidel Velazquez">Fidel Velazquez</option>
+            <option value="Anapra">Anapra</option>
+            <option value="Riveras del Bravo 8 Seccion">Riveras del Bravo 8 Secci&oacute;n</option>
+            <option value="Gomez Morin">Gomez Mor&iacute;n</option>
+            <option value="Campestre">Campestre</option>
+            <option value="San angel">San &aacute;ngel</option>
+            <option value="Insurgentes">Insurgentes</option>
+            <option value="Infonavit Casas Grandes">Infonavit Casas Grandes</option>
+            <option value="Francisco Sarabia">Francisco Sarabia</option>
+        </select>
+        <br><br>
+        
+        <label for="Cp">Codigo Postal:</label><br>
+        <input type="number" id="Cp" name="Cp" min="32000" max="32546" maxlength="5" required ><br><br>
+        
+        <label for="Correo">Correo:</label><br>
+        <input type="email" id="Correo" name="Correo" maxlength="60" required ><br><br>
+        
+        <label for="Cel">Celular:</label><br>
+        <input type="text" id="Cel" name="Cel" maxlength="10" required ><br><br>
+        
+        <h4>Curso:</h4>
+        <select name="Curso">
+            <option value="">-----</option>
+            <option value="Introduccion a HTML5 CSS3">Introducci&oacute;n a HTML5 CSS3</option>
+            <option value="Matematicas Discretas">Matem&aacute;ticas Discretas</option>
+            <option value="Tecnologias para el diseno I">Tecnolog&iacute;as para el dise&ntilde;o I</option>
+            <option value="Programacion">Programaci&oacute;n</option>
+            <option value="Geometria 3D">Geometr&iacute;a 3D</option>
+        </select><br><br>
+        
+        <label for="Turno">Turno</label><br>
+        <div><input type="radio" name="Turno" value="Matutino">
+        <label for="Turno">Matutino</label></div>
+        <div><input type="radio" name="Turno" value="Vespertino">
+        <label for="Turno">Vespertino</label></div>
+        
+        <br>
+        <button class="submit" types"submit">Enviar Registro</button>
+    </form>
+    </div>
+    
+</body>
+</html>

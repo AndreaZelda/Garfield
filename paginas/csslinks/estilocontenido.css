@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    display: grid;
+}
+
+#imagenlogo {
+    position: fixed;
+    margin-left: 2%;
+    margin-top: 3px;
+    max-width: 15%;
+    min-width: 10%;
+}
+
+#contenido {
+    width: 30%;
+}
+
+#menusito {
+    width: 1920px;
+    height: 75px;
+    background-color: beige;
+    position: fixed;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(254, 154, 0);
+    /*text-shadow: 2px 2px rgb(0, 0, 0);*/
+    font-size: 1.2em;
+    font-family: Josefin Sans;
+}
+
+nav ul li:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.titulomayor {
+    font-size: 40px;
+    font-family: Abril Fatface;
+}
+
+.fuentep {
+    font-family: Josefin Sans;
+}
+
+.slider {
+    max-width: 1400px;
+    display: flex;
+}
+
+.slider .card {
+    background: beige;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.slider .card .img {
+    height: 400px;
+    width: 100%;
+}
+
+.slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content{
+    padding: 10px 20px;
+}
+
+.card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Abril Fatface;
+}
+
+.card .content .subtitulo{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Abril Fatface;
+    color: #bf4996;
+    line-height: 20px;
+}
+
+.card .content p{
+    text-align: justify;
+    margin: 10px 0;
+}
